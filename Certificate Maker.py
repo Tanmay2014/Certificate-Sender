@@ -3,8 +3,8 @@ import textwrap
 import pandas as pd
 import yagmail
 
-sheet = pd.read_excel('btor.xlsx')
-names = sheet["Names"].tolist()
+sheet = pd.read_excel('btor.xlsx')# Add your excel file name here
+names = sheet["Names"].tolist()#Replace Fields accordingly
 mails = sheet["Mails"].tolist()
 
 sender = str(input("Please Enter your Email Address : "))
