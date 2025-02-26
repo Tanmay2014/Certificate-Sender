@@ -7,9 +7,9 @@ sheet = pd.read_excel('btor.xlsx')
 names = sheet["Names"].tolist()
 mails = sheet["Mails"].tolist()
 
-sender = str(input("Please Enter your Email Address : "))#"cdosbdce@gmail.com"
+sender = str(input("Please Enter your Email Address : "))
 
-pwd = str(input("Please Enter your Password : "))#"BDCDOS#1"
+pwd = str(input("Please Enter your Password : "))
 
 mail = yagmail.SMTP(user=sender, password=pwd)
 
